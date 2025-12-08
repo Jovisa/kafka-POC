@@ -54,9 +54,8 @@ graph TD
 - inside project folder run `docker compose up` to run Kafka in Docker container
 - run all services (`order-service`, `notification-service`, `inventory-service`)
 
-<br>
 
-- to send new message to Kafka topic (example request):
+- send new message to Kafka topic (example request):
   - **POST** `localhost:8080/api/orders`
 
     ```json
@@ -66,3 +65,5 @@ graph TD
       "quantity": 2,
       "price": 100.50
     }
+    
+- observe logs in `notification-service` and `inventory-service`
